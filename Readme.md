@@ -3,13 +3,13 @@ This is a stupid project
 
 ## Emit
 
-#### the Object Oriented Event dispatcher in a tweet:
+#### The Object Oriented Event dispatcher in a tweet:
 
 ``` php
 class Emit{function bind($e,$f){$this->l[$e][]=$f;}function __invoke($e){foreach($this->l[end(explode('\\',get_class($e)))]as$a)$a($e);}}
 ```
 
-Usage
+**Emit Usage**
 
 ``` php
 $emit = new Emit();
@@ -25,6 +25,41 @@ $event = new FoodOrdered('Pizza');
 // calling the event
 $emit($event);
 ```
+
+## Form
+
+#### The Object Oriented DTO handler in a tweet:
+
+``` php
+class Form{function handle($c,$r){foreach(array_intersect_key((array)$r,(array)($d=new$c))as$a=>$v)$d->$a=$v;return$d;}}
+```
+
+**Form Usage**
+
+``` php
+$httpRequest = array('who'=>'liuggio', 'something we don\'t need');
+$form = new Form();
+$kissCommandDTO = $form->handle('\sized140\KissCommandDTO', $httpRequest);
+
+echo $kissCommandDTO->who;
+```
+
+## Validation
+
+Help me to do it :)
+
+## Routing
+
+Help me to do it :)
+
+## Templating
+
+Help me to do it :)
+
+## Controller
+
+Help me to do it :)
+
 
 ## Thanks to
 
