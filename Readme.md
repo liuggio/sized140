@@ -54,7 +54,23 @@ Help me to do it :)
 
 ## Templating
 
-Help me to do it :)
+``` php
+class Render {public function __invoke($theme, $dto){return strtr($theme, (array)$dto);}}
+```
+
+**Render Usage**
+
+``` php
+$template = "the test";
+$dto      = new \StdClass();
+
+$dto->the  = "Hello";
+$dto->test = "World";
+
+$render = new Render();
+
+echo $render($template, $dto); // "Hello World"
+```
 
 ## Controller
 
