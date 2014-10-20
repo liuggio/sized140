@@ -1,7 +1,7 @@
 <?php
 namespace sized140;
 
-include __DIR__ . '/Form.php';
+include __DIR__ . '/Sized140.php';
 
 // this is an event
 class KissCommandDTO {

@@ -1,5 +1,5 @@
-This is a stupid project
-========================
+This is a stupid project about [yocto](http://en.wikipedia.org/wiki/Yocto-)-components
+======================================================================================
 
 ## Emit
 
@@ -63,6 +63,7 @@ Help me to do it :)
 
 ## Thanks to
 
-1. http://twitto.org/  A web framework in a tweet (@fabpot)
-2. http://twittee.org/ A Dependency Injection Container in a Tweet (@fabpot)
-3. https://github.com/lastguest/ev A tweet-sized PHP Event emitter
+1. http://twitto.org/  A web framework in a tweet by @fabpot
+2. http://twittee.org/ A Dependency Injection Container in a Tweet by @fabpot
+3. https://github.com/lastguest/ev A tweet-sized PHP Event emitter @lastguest
+4. https://gist.github.com/mathiasverraes/9046427 - A test framework in a tweet by @mathiasverraes
