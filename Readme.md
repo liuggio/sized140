@@ -13,7 +13,7 @@ Usage
 
 ``` php
 $emit = new Emit();
-// Binding 2 events
+// Binding 1 event to 2 listeners
 $emit->bind('FoodOrdered', function(){
         echo 'FOOD ORDERED...';
 });
