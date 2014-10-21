@@ -1,5 +1,5 @@
 <?php
-namespace sized140;
+namespace Sized140;
 
 include __DIR__ . '/Sized140.php';
 

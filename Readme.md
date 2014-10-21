@@ -54,14 +54,18 @@ Help me to do it :)
 
 ## Templating
 
+*provided by @claudio-dalicandro*
+
+#### The Object Oriented Render in a tweet:
+
 ``` php
-class Render {public function __invoke($theme, $dto){return strtr($theme, (array)$dto);}}
+class Render{function __invoke($t,$d){$d=(array)$d;$o=[];array_walk($d,function($i,$k)use(&$o){$o['{'.$k.'}']=$i;});return strtr($t,$o);}}
 ```
 
 **Render Usage**
 
 ``` php
-$template = "the test";
+$template = "{the} {test}";
 $dto      = new \StdClass();
 
 $dto->the  = "Hello";
@@ -69,6 +73,13 @@ $dto->test = "World";
 
 $render = new Render();
 
+echo $render($template, $dto); // "Hello World"
+```
+or simply use array:
+
+``` php
+$dto = array('the'=>'Hello', 'test'=>'world');
+$render = new Render();
 echo $render($template, $dto); // "Hello World"
 ```
 
