@@ -9,8 +9,8 @@ class KissCommandDTO {
 }
 
 $httpRequest = array('who'=>'liuggio', 'something we don\'t need');
-$form = new Form();
-$kissCommandDTO = $form->handle('\sized140\KissCommandDTO', $httpRequest);
+
+$kissCommandDTO = form('\sized140\KissCommandDTO', $httpRequest);
 
 if ($kissCommandDTO->who == 'liuggio'){
     echo "\ntests pass Yes";

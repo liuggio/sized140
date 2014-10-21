@@ -3,4 +3,4 @@ language: php
 php: [5.3.3, 5.3, 5.4, 5.5, hhvm]
 
 script:
-  - php EmitTest.php && php FormTest.php && RenderTest.php
+  - php EmitTest.php && php formTest.php && renderTest.php && matchTest.php && IsTest.php

@@ -9,9 +9,7 @@ $dto      = new \StdClass();
 $dto->the  = "Hello";
 $dto->test = "World";
 
-$render = new Render();
-
-$out = $render($template, $dto);
+$out = render($template, $dto);
 if ($out == 'Hello World'){
     echo "\ntests pass Yes\n";
     exit(0);
