@@ -1,7 +1,7 @@
 <?php
 namespace Sized140;
 
-include __DIR__ . '/Sized140.php';
+include __DIR__ . '/../Sized140.php';
 
 // this is an event
 class FoodOrdered {
@@ -23,7 +23,7 @@ $emit->bind('FoodOrdered', function($e){
 $event = new FoodOrdered('Pizza');
 ob_start();
 $emit($event);
-$content = ob_get_contents();
+$content = ob_get_clean();
 
 if ($content=='FOOD ORDERED...Pizza'){
     echo "\ntests pass Yes";

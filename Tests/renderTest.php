@@ -1,7 +1,7 @@
 <?php
 namespace Sized140;
 
-include __DIR__ . '/Sized140.php';
+include __DIR__ . '/../Sized140.php';
 
 $template = "{the} {test}";
 $dto      = new \StdClass();

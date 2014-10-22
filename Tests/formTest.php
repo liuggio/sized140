@@ -1,9 +1,8 @@
 <?php
 namespace Sized140;
 
-include __DIR__ . '/Sized140.php';
+include __DIR__ . '/../Sized140.php';
 
-// this is an event
 class KissCommandDTO {
     public $who;
 }
